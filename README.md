@@ -7,7 +7,7 @@ i) The original paper uses only ITM paths whereas the book's algorithm uses all 
 ii) The basis function in the book uses just powers on the raw S, while the original paer uses weighted Laguerre polynomials. The latter is not something I was earlier familiar with, however, was easy to code from the original paper's algorithm
 iii) The book version of the path simulation uses independent normals while the original LSM paper uses antithetic variates. 
 
-The book's algorithm shows a valuation - "LSM American put value: 4.4041 (s.e. 0.0089)"
+The book's algorithm shows a valuation - "LSM American put value: 4.4041 (s.e. 0.0089)". This is the lower bound of the American put. 
 The LSM paper algorithm's implementation gives us - "LSM (paper) American put: 4.4822 (s.e. 0.0092)"
 
 By using the same basis functions as in the book while only considering the in-the-money paths, I get a very similar valution as the original function - "LSM (paper) American put with Yves basis function: 4.4707 (s.e. 0.0092)". 
